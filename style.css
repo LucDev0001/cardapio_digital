@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+#tela-inicial,
+#menu-cardapio {
+  transition: opacity 0.5s ease;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: black;
@@ -70,7 +75,7 @@ header h1 {
   display: flex;
   align-items: center;
   background-color: rgb(165, 79, 9);
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 30px;
@@ -87,6 +92,88 @@ header h1 {
 
 .botao-banner a:hover {
   background-color: #a24c06;
+}
+
+.topo-cardapio img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardapio {
+  padding: 40px 20px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.cardapio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cardapio .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cardapio .item {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardapio .item h3 {
+  margin: 10px 0 5px;
+}
+
+.cardapio .item p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.cardapio .item span {
+  font-weight: bold;
+  color: #a54f09;
+  font-size: 1.1rem;
+}
+
+.botao-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: green;
+  font-weight: bold;
+  padding: 10px 14px;
+  border: 1px solid green;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 /* 🔽 Ajustes para telas pequenas */
